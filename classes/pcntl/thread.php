@@ -10,7 +10,7 @@ class Pcntl_Thread {
 
 	public static function factory($callback, $arguments = NULL)
 	{
-		$thread = new Pcntl_Thread;
+		$thread = new Thread;
 
 		$thread->run($callback, $arguments);
 
@@ -45,8 +45,8 @@ class Pcntl_Thread {
 				call_user_func($callback);
 			}
 
-			// Done? Lets exit cleanly..
-			exit(0);
+			// Done? Lets exit cleanly.. or not.
+//			exit(0);
 		}
 	}
 
