@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="kohana-pcntl" basedir="." default="main">
+	<property file="build.properties" />
+
+	<import file="build/build-kohana-module-common.xml" />
+	<import file="build/build-common.xml" />
+
+	<property name="app.description" value="Kohana PCNTL Module" /> <!-- Module Description -->
+	<property name="kohana.module.name" value="pcntl" /> <!-- Module Name -->
+	<property name="kohana.version" value="3.0" />  <!-- Compatible  Kohana Version (eg 3.0 or 3.1, not 3.0.9 etc) -->
+	<property name="app.version" value="0.0.1" /> <!-- Module Version Number -->
+
+	<property name="app.name" value="kohana${kohana.version}-${kohana.module.name}" />
+</project>
